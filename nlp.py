@@ -67,8 +67,8 @@ def process_tweets(tweets):
 
     schema = StructType([
         StructField("id", LongType(), False),
-        StructField("created_at", TimestampType(),True),
-        StructField("author_id", LongType(),True),
+        StructField("created_at", TimestampType(), True),
+        StructField("author_id", LongType(), True),
         StructField("conversation_id", LongType(), True),
         StructField("source", StringType(), True),
         StructField("geo_coordinates", ArrayType(DoubleType(), False), True),
